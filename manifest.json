@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Auto-Relate",
+  "version": "1.0.0",
+  "description": "Automatically adds Related Items based on OpenAlex citation data when new items are added.",
+  "author": "Shae",
+  "applications": {
+    "zotero": {
+      "id": "auto-relate@shae.dev",
+      "update_url": "",
+      "strict_min_version": "6.999",
+      "strict_max_version": "8.*"
+    }
+  }
+}
