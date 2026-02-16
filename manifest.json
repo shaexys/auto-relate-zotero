@@ -3,11 +3,12 @@
   "name": "Auto-Relate",
   "version": "1.0.0",
   "description": "Automatically adds Related Items based on OpenAlex citation data when new items are added.",
+  "homepage_url": "https://github.com/shaexys/auto-relate-zotero",
   "author": "Shae",
   "applications": {
     "zotero": {
       "id": "auto-relate@shae.dev",
-      "update_url": "",
+      "update_url": "https://github.com/shaexys/auto-relate-zotero/releases/download/release/update.json",
       "strict_min_version": "6.999",
       "strict_max_version": "8.*"
     }
