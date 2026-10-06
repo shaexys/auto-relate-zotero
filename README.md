@@ -1,6 +1,6 @@
 # Auto-Relate
 
-A Zotero 7 plugin that automatically adds **Related Items** based on citation data from [OpenAlex](https://openalex.org/).
+A Zotero 7+ plugin that automatically adds **Related Items** based on citation data from [OpenAlex](https://openalex.org/).
 
 When you add a new paper to your library, Auto-Relate queries OpenAlex to find its references and citing papers, then links any that already exist in your library as Zotero Related Items. These relations flow into tools like Obsidian (via Better BibTeX), automatically forming a citation knowledge graph.
 
