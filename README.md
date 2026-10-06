@@ -2,14 +2,14 @@
 
 A Zotero 7+ plugin that automatically adds **Related Items** based on citation data from [OpenAlex](https://openalex.org/).
 
-When you add a new paper to your library, Auto-Relate queries OpenAlex to find its references and citing papers, then links any that already exist in your library as Zotero Related Items. These relations flow into tools like Obsidian (via Better BibTeX), automatically forming a citation knowledge graph.
+When you add a new paper to your library, Auto-Relate queries OpenAlex to find its references and citing papers, then links any that already exist in your library as Zotero Related Items. Related Items can then be exported to note-taking tools such as Obsidian (through Better BibTeX), where they appear as citation links between notes.
 
 ## Features
 
 - **Automatic**: Runs in the background when new items are added
 - **Manual**: Right-click selected items → "Find Related Items (OpenAlex)"
 - **Bidirectional**: Links both references (papers it cites) and citing papers (papers that cite it)
-- **Library-only**: Only creates relations between papers already in your library
+- **Library-only**: Only creates relations between papers already in your personal library (group libraries are not searched)
 
 ## Install
 
@@ -33,10 +33,11 @@ Set your email for the [OpenAlex polite pool](https://docs.openalex.org/how-to-u
 4. Matches DOIs against your library
 5. Adds bidirectional Related Item links in Zotero
 
-## Requirements
+## Requirements and limits
 
 - Zotero 7.0+
 - Papers must have DOIs for matching to work
+- Each paper checks up to its first 100 references and 100 citing papers in OpenAlex
 
 ## Build from source
 

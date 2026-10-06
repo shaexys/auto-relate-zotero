@@ -213,6 +213,9 @@ Zotero.AutoRelate = {
 
   // ========== Core Logic (adapted from existing script) ==========
   async _processItem(item, doiToItem) {
+    // Matching uses the personal library only, so group-library items are skipped
+    // rather than linked across libraries.
+    if (item.libraryID !== Zotero.Libraries.userLibraryID) return 0;
     const title = item.getField("title").substring(0, 60);
     const doi = this._normalizeDOI(item.getField("DOI"));
 
